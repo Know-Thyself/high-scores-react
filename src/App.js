@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="header">High Score Table By Country</h1>
+        <h1 className="header">Countries High Score Table</h1>
         <HighScoreTable country={scores}/>
       </header>
     </div>

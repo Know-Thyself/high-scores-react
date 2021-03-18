@@ -13,7 +13,7 @@ const HighScoreTable = (props) => {
                 return -1;
             } else {
                 return 1;
-            }
+              }
         });
     });
 
