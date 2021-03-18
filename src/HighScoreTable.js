@@ -2,8 +2,8 @@ import React from 'react';
 
 const HighScoreTable = (props) => {
     const countryNames = props.country.sort((a,b)=> {
-        let a1 = a.name.toLowerCase();
-        let b1 = b.name.toLowerCase();
+        let a1 = a.name;
+        let b1 = b.name;
         return a1 < b1 ? -1 : a1 > b1 ? 1 : 0;
     });
     
