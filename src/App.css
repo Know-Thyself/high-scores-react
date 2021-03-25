@@ -11,6 +11,10 @@
   border: 4px ridge aliceblue;
 }
 
+.g-table .header {
+  height: 2em;
+}
+
 .toggle-button,
 .toggle {
   margin-bottom: 1.3em;
@@ -23,8 +27,14 @@
   border-style: solid  rgb(5, 14, 53);
 }
 
+.toggle-button:hover,
+.toggle:hover {
+  background-color: silver;
+}
+
 span {
   content: "\2195";
+  color: rgb(5, 14, 53);
 }
 
 .table {
@@ -33,6 +43,34 @@ span {
 
 .table tr {
   border: 4px ridge rgb(5, 14, 53);
+}
+
+.g-table {
+  width: 60vw;
+}
+.global-headers {
+  background-color: rgb(5, 14, 53);
+}
+
+.g-headers {
+  display: table-header-group;
+}
+
+.g-t-body {
+  display: table-row;
+  justify-self: start;
+  width: 70vw;
+  color: rgb(5, 14, 53);
+  font-weight: normal;
+  font-style: normal;
+  border: 4px ridge rgb(5, 14, 53);
+  padding: auto;
+  background-color: aliceblue;
+}
+
+.name {
+  font-weight: normal;
+  font-style: normal;
 }
 
 .country-headers {
@@ -49,14 +87,14 @@ span {
   display: flex;
   justify-content: space-between;
   margin: 0.2em;
-  padding: 0.2em;
-  background-color: rgb(173, 169, 169);
+  padding: 0.2em 0.5em 0.2em 0.5em;
   color: rgb(5, 14, 53);
   text-shadow: 2px 1px 1px aliceblue;
+  background-color: aliceblue;
 }
 
 .App-header {
-  background-color: rgb(72, 95, 138);
+  background-color: rgb(29, 44, 71);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
