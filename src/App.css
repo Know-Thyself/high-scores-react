@@ -57,7 +57,7 @@ span {
 }
 
 .g-t-body {
-  display: table-row;
+  display: table-row; 
   justify-self: start;
   width: 70vw;
   color: rgb(5, 14, 53);
@@ -65,12 +65,16 @@ span {
   font-style: normal;
   border: 4px ridge rgb(5, 14, 53);
   padding: auto;
-  background-color: aliceblue;
+  background-color: aliceblue; 
 }
 
 .name {
   font-weight: normal;
   font-style: normal;
+}
+
+.global-scores {
+  margin-top: -20em;
 }
 
 .country-headers {

@@ -1,38 +1,48 @@
 import React from 'react';
 
 const GlobalHighScores = (props) => {
-    props.global.map(highest => {
-       const highestScores = highest.scores;
-        highestScores.map(score =>{
-            const globalScore = score.s;
-            return globalScore;
+
+    const playersAndScores = [];
+    props.global.forEach(entry => {
+        entry.scores.forEach(player => {
+            playersAndScores.push([player.n, player.s])
         })
-        return highestScores.sort((a, b) => {
-            return b.s - a.s;
-        });
-    });
-    
+    })
+
+    function arraySorter(arr) {
+        let jsonObj = {};
+        let values = [];
+        let result = [];
+        for (let i = 0; i < arr.length; i++) {
+            jsonObj[arr[i][1]] = arr[i][0];
+        }
+        values = Object.keys(jsonObj).sort((a, b) => b - a);
+
+        for (let j = 0; j < values.length; j++) {
+            result.push([jsonObj[values[j]], values[j]]);
+        }
+        return result;
+    }
+    const sortedArray = arraySorter(playersAndScores);
+
     return (
         <table className="g-table">
             <thead>
                 <tr className="header">
                     <th className="g-header" scope="col">Name</th>
                     <th className="g-header" scope="col">Score</th>
-                    <th className="g-header" scope="col">Country</th>
                 </tr>
             </thead>
+
             <tbody>
-                {props.global.map(g => ( 
-                    (g.scores.map(score => {
-                            return (
-                                <tr className="g-t-body">
-                                    <th scope="row" className="name">{score.n}</th>
-                                    <td className="global-scores">{score.s}</td>
-                                    <td>{g.name}</td>
-                                </tr>
-                            );
-                    }))
-                ))}
+                {sortedArray.map(players => {
+                    return (
+                        <tr className="g-t-body"> 
+                            <th scope="row" className="name">{players[0]}</th>
+                            <td className="global-scores">{players[1]}</td>
+                        </tr> 
+                    )
+                })}
             </tbody>
         </table>
     );
