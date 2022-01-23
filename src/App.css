@@ -5,6 +5,7 @@
 
 .header {
   background-color: rgb(5, 14, 53);
+  background-color: #4C516D;
   padding: auto;
   width: 60vw;
   font-weight: 300;
@@ -22,9 +23,9 @@
   font-weight: 700;
   padding: 0.4em;
   cursor: pointer;
-  color: rgb(5, 14, 53);
+  color: #4C516D;
   border-radius: 0.3em;
-  border-style: solid  rgb(5, 14, 53);
+  border-style: solid  #4C516D;
 }
 
 .toggle-button:hover,
@@ -34,7 +35,7 @@
 
 span {
   content: "\2195";
-  color: rgb(5, 14, 53);
+  color: #4C516D;
 }
 
 .table {
@@ -42,14 +43,14 @@ span {
 }
 
 .table tr {
-  border: 4px ridge rgb(5, 14, 53);
+  border: 4px ridge #4C516D;
 }
 
 .g-table {
   width: 60vw;
 }
 .global-headers {
-  background-color: rgb(5, 14, 53);
+  background-color: #4C516D;
 }
 
 .g-headers {
@@ -60,10 +61,10 @@ span {
   display: table-row; 
   justify-self: start;
   width: 70vw;
-  color: rgb(5, 14, 53);
+  color: #4C516D;
   font-weight: normal;
   font-style: normal;
-  border: 4px ridge rgb(5, 14, 53);
+  border: 4px ridge #4C516D;
   padding: auto;
   background-color: aliceblue; 
 }
@@ -80,7 +81,7 @@ span {
 .country-headers {
   font-size: 1.5em;
   display: block;
-  background-color: rgb(5, 14, 53);
+  background-color: #4C516D;
   width: 50vw;
   text-align: center;
   font-weight: 300;
@@ -92,13 +93,13 @@ span {
   justify-content: space-between;
   margin: 0.2em;
   padding: 0.2em 0.5em 0.2em 0.5em;
-  color: rgb(5, 14, 53);
+  color: #4C516D;
   text-shadow: 2px 1px 1px aliceblue;
   background-color: aliceblue;
 }
 
 .App-header {
-  background-color: rgb(29, 44, 71);
+  background-color:#888888;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
